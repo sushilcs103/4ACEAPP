@@ -28,80 +28,83 @@
             </div>
         </header>
 
-        <h3>Welcome!</h3>
-        <p>
-            Telerik AppBuilder&trade; enables you to build cross-platform device applications regardless of your
-            development platform by combining the convenience of a local development toolset with the
-            power and flexibility of the cloud.
-        </p>
-        <div class="welcome-image"></div>
+        <h3>Description</h3>
+         <p>
+                		Four Ace Infomatics Limited is a UK based software 
+                        development company. At Four Ace Infomatics Private Limited we help you address evolving 
+                        business and technology challenges by defining, designing and building applications 
+                        tailored to meet your business requirements.
+                        <p  Style="margin-top:-10px;">At Four Ace we create innovative windows, 
+                        web/cloud and mobile applications that enable our customers to compete and win in their marketplace.
+                        Our core competency is in Enterprise Web application development, Windows application and Android/iPhone Apps Development. 
+                        All our services are optimized to exceed customer expectations, on time, at the right cost. 
+                        We follow Agile Software Development practice that enables us to deliver a flexible, adaptive software development experience.
+                    </p> 
+                            
+                        </p>
+        <ul data-role="listview">
+                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="home/images/cloudicon.png" /> Business Services</a></li> 
+                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="home/images/trophyicon.png" /> Cloud Services</a></li>
+                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="home/images/trophyicon.png" /> Technology Services</a></li>
+              </ul>  
     </div>
 
-    <!--Login View-->
-    <div id="tabstrip-login"
+    <!--Services-->
+    <div id="tabstrip-Services"
         data-role="view"
-        data-title="Login"
-        data-model="app.loginService.viewModel">
+        data-title="Services">
+     
 
-        <div class="logo-image"></div>
-        <div>
-            <h3 data-bind="visible: isLoggedIn">Welcome, <span data-bind="    text: username"></span>!</h3>
-            <input id="logout" type="submit" data-role="button" data-bind="click: onLogout, visible: isLoggedIn" value="Logout" class="login-button" />
-        </div>
-        <form data-bind="events: { keyup: checkEnter }">
-            <h3 data-bind="invisible: isLoggedIn">Enter your credentials:</h3>
-            <ul data-role="listview" data-style="inset" data-bind="invisible: isLoggedIn">
-                <li>
-                    <label>
-                        <div>Username</div>
-                        <input type="text" data-bind="value: username" />
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <div>Password</div>
-                        <input type="password" data-bind="value: password" />
-                    </label>
-                </li>
-            </ul>
-            <input id="login" type="submit" data-role="button" data-bind="click: onLogin, invisible: isLoggedIn" value="Login" class="login-button" />
-        </form>
+       <ul data-role="listview">
+                 <li><a href="#applicationdevelopment" data-transition="slide" class="menu" > Application Development</a></li> 
+                 <li><a href="#applicationmanagement" data-transition="slide" class="menu" >Application Management</a></li>
+                 <li><a href="#enterprise" data-transition="slide" class="menu" >Enterprise Integration</a></li>
+                 <li><a href="#businessintelligence" data-transition="slide" class="menu" >Business Intelligence Solution</a></li>
+                 <li><a href="#itconsulting" data-transition="slide" class="menu" >IT Consulting</a></li>
+                 <li><a href="#cloud_services" data-transition="slide" class="menu" >Cloud Services</a></li>
+                 <li><a href="#itgovernance" data-transition="slide" class="menu" >It Governance</a></li>
+                 <li><a href="#enterprisemobility" data-transition="slide" class="menu" >Enterprise Mobility</a></li> 
+                 
+              </ul>  
     </div>
 
     <!--Location View-->
-    <div id="tabstrip-location"
+    <div id="tabstrip-Industries"
         data-role="view"
-        data-title="Location"
-        data-init="app.locationService.initLocation"
-        data-show="app.locationService.show"
-        data-hide="app.locationService.hide"
-        data-model="app.locationService.viewModel"
-        data-stretch="true">
-
-        <div id="map-canvas" class="map" data-bind="visible: isGoogleMapsInitialized"></div>
-
-        <div id="no-map" data-bind="invisible: isGoogleMapsInitialized">
-            <h3>Location requires internet connection to display the map.</h3>
-        </div>
-        <div id="map-search-wrap" class="map-tools" data-bind="visible: isGoogleMapsInitialized">
-            <div>
-                <button id="map-navigate-home" class="map-tools-button home" data-bind="click: onNavigateHome"></button>
-                <input id="map-address" type="search" class="map-tools-input" data-bind="value: address" placeholder="Address" />
-                <button id="map-search" class="map-tools-button search" data-bind="click: onSearchAddress"></button>
-            </div>
-        </div>
+        data-title="Industries">
+       
+               <ul data-role="listview">
+                 <li><a href="#banking" data-transition="slide" class="menu" > Banking</a></li> 
+                 <li><a href="#consumergoods" data-transition="slide" class="menu" >Consumer Goods</a></li>
+                 <li><a href="#government" data-transition="slide" class="menu" >Government</a></li>
+                 <li><a href="#utilities" data-transition="slide" class="menu" >Utilities</a></li>
+                 <li><a href="#engineering" data-transition="slide" class="menu" >Engineering / Construction</a></li>
+                 <li><a href="#healthcare" data-transition="slide" class="menu" >Healthcare</a></li>
+                 <li><a href="#hi-tech" data-transition="slide" class="menu" >Hi-tech</a></li>
+                 <li><a href="#insurance" data-transition="slide" class="menu" >Insurance</a></li> 
+                 <li><a href="#professional" data-transition="slide" class="menu" >Professional Services</a></li>
+                 <li><a href="#media" data-transition="slide" class="menu" >Media</a></li>
+                 <li><a href="#transportation" data-transition="slide" class="menu" >Transportation</a></li>
+                 <li><a href="#retail" data-transition="slide" class="menu" >Retail</a></li> 
+              </ul>   
     </div>
 
-    <!--Weather View-->
-    <div id="tabstrip-weather"
+    <!--About Us-->
+    <div id="tabstrip-AboutUs"
         data-role="view"
-        data-title="Weather"
-        data-model="app.weatherService.viewModel">
+        data-title="AboutUs">
 
-        <ul data-role="listview" data-style="inset"
-            data-bind="source: weatherDataSource"
-            data-template="weather-forecast-template">
+        <ul data-role="listview">
+            <li><a href="#experience" data-transition="slide" class="menu" >Experience Certaintity</a></li> 
+            <li><a href="#expertise" data-transition="slide" class="menu" >Expertise and Capabilities</a></li> 
+            <li><a href="#coperate" data-transition="slide" class="menu" >Coperate Facts</a></li> 
+            <li><a href="#operational" data-transition="slide" class="menu" >Operational Excellence</a></li> 
+            <li><a href="#vision" data-transition="slide" class="menu" >Vision and Core Values</a></li> 
+            <li><a href="#culture" data-transition="slide" class="menu" >Culture</a></li> 
+            <li><a href="#spirit" data-transition="slide" class="menu" >Spirit of Four Ace</a></li> 
+           
         </ul>
+        
     </div>
 
     <!--Weather forecast template-->
@@ -129,9 +132,9 @@
         <div data-role="footer">
             <div data-role="tabstrip">
                 <a href="#/" data-icon="home">Home</a>
-                <a href="#tabstrip-login" data-icon="contacts">Login</a>
-                <a href="#tabstrip-location" data-icon="search">Location</a>
-                <a href="#tabstrip-weather" data-icon="globe">Weather</a>
+                <a href="#tabstrip-Services" data-icon="settings">Services</a>
+                <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
+                <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
             </div>
         </div>
     </div>
