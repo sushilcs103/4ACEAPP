@@ -15,6 +15,7 @@
     <script src="scripts/location.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/app.js"></script>
+    <link href="styles/index.css" rel="stylesheet"/>
 </head>
 <body>
     <!--Home View-->
@@ -24,7 +25,8 @@
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a id="skin-change" data-role="button" data-align="right" data-click="app.changeSkin">Flat</a>
+                <a class="nav-button" data-align="left" data-role="backbutton" >Back</a>
+                
             </div>
         </header>
 
@@ -43,9 +45,9 @@
                             
                         </p>
         <ul data-role="listview">
-                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="home/images/cloudicon.png" /> Business Services</a></li> 
-                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="home/images/trophyicon.png" /> Cloud Services</a></li>
-                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="home/images/trophyicon.png" /> Technology Services</a></li>
+                 <li><a href="#industries" data-transition="slide"  ><img src="images/home/businessicon.png" class="homeicon" /> Business Services</a></li> 
+                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="images/home/cloudicon.png" class="homeicon" /> Cloud Services</a></li>
+                 <li><a href="#industries" data-transition="slide" class="menu" ><img src="images/home/technologyicon.png" class="homeicon"/> Technology Services</a></li>
               </ul>  
     </div>
 
@@ -107,17 +109,7 @@
         
     </div>
 
-    <!--Weather forecast template-->
-    <script id="weather-forecast-template" type="text/x-kendo-tmpl">
-        <div class="w-item-template">
-            <span class="w-icon ${image}"></span>
-            <h4 class="w-date">${day}</h4>
-            <div class="w-temp">
-                <span>${highTemperature}<sup>&deg;</sup></span>
-                <span>${lowTemperature}<sup>&deg;</sup></span>
-            </div>
-        </div>
-    </script>
+    
 
     <!--Layout-->
     <div data-role="layout" data-id="tabstrip-layout">
@@ -125,6 +117,7 @@
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
+                <a class="nav-button" data-align="left" data-role="backbutton" >Back</a>
             </div>
         </div>
 
