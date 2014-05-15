@@ -1,6 +1,36 @@
-body {
+body
+{
+   font-family:Arial;
+    font-size:16px;  
+    
+    
 }
+
 .homeicon{
     width:20px;
     height:20px;
+}
+.pstyle{
+    text-align:left;
+    margin-top:10px;
+}
+.pheading{
+    font-size:18px;
+    font-family:arial;
+}
+.txtspace{
+     margin-top:-10px;
+    text-align:left;
+}  
+.topmargin
+{
+ margin-top:13px;  
+    
+}
+.tblspace{
+    width:100%;
+    margin-top:-5px;
+}    
+.imgwidth{
+    width:25%;
 }
