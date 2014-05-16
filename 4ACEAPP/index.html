@@ -20,100 +20,7 @@
 <body>
     
     <!--IndexPage-->
-    
- <!--   <div id="tabstrip-index"
-        data-role="view"
-        data-title="Home" >
-        <header data-role="header" >
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
-       
-        <table   style="padding-top:2px;width:100%;" >
-            <tr align="center"  >
-             <td >
-                 <a  href="#tabstrip-home" class="menu"><p class="group" ><img  src="images/index/home8.png"   /><br>Home</p></a> 
-                
-                
-             </td>
-             <td > 
-              <a href="#tabstrip-Services"  class="menu" ><p class="group" ><img src="images/index/OurServices9.png"   /><br>Services</p></a> 
-                 
-                
-             </td>
-                       
-              <td >
-                <a href="#tabstrip-Industries" rel="external" class="menu" ><p class="group"><img src="images/index/Industries9.png"   /><br>Industries</p></a>
-                 
-                
-             </td>
-                 
-             
-             
-             
-         </tr>
-            
-            
-             <tr align="center" >
-             
-            
-                 
-                 
-                 <td >
-               <a href="#tabstrip-AboutUs" class="menu"  ><p class="group"><img src="images/index/aboutus8.png"   /><br>About Us</p></a>
-                  
-                  
-             </td>
-             
-                 
-                   <td>
-               <a href="#tabstrip-career"   class="menu"><p class="group"><img src="images/index/careers8.png"  /><br>Careers</p></a>
-                 
-                 
-             </td>
-                 
-                 
-                     
-                  <td >
-                <a href="#tabstrip-contact"  class="menu" ><p class="group"><img src="images/index/ContactUS8.png" /><br>Contact Us</p></a>
-                 
-               
-             </td>  
-                 
-         </tr>
-            
-            <tr>
-               <!-- <td>
-                    <a href="Featured.html" rel="external" class="a" ><p class="group"><img src="Images/featured9.png" class="grow" /><br>Featured</p></a>
-                 
-                 
-                </td>
-                
-                <td  >
-                    
-                   <a href="#tabstrip-Employee"  class="menu" ><p class="group"><img src="images/index/EmployeeIcon.png"  /><br>Employee</p></a>
-                 
-                   
-                    
-                </td>
-            
-            </tr>
-          
-            
-     </table>
 
-        
-        
-        
-        
-        
-    </div> -->
-    
-    
-    
        <div id="tabstrip-index"
         data-role="view"
          data-layout="Index-layout"
@@ -213,17 +120,14 @@
           
         
     </div>
-    
-    
-    
-    
+
        <!--Home View-->
     <div id="tabstrip-home"
         data-role="view"
-        data-title="Home" >
+        data-title="Home"  >
        
-
-        <h3>Description</h3>
+      <div class="left">
+        <h3 style="margin-left:2px">Description</h3>
          <p>
                 		Four Ace Infomatics Limited is a UK based software 
                         development company. At Four Ace Infomatics Private Limited we help you address evolving 
@@ -241,29 +145,35 @@
                  <li><a href="#BusinessServices" data-transition="slide"  ><img src="images/home/businessicon.png"  class="homeicon" /> Business Services</a></li> 
                  <li><a href="#CloudServices" data-transition="slide" class="menu" ><img src="images/home/cloudicon.png" class="homeicon" /> Cloud Services</a></li>
                  <li><a href="#TechnologyServices" data-transition="slide" class="menu" ><img src="images/home/technologyicon.png" class="homeicon"/> Technology Services</a></li>
-              </ul>  
+         
+            </ul> 
+        
+        </div>
+        
     </div>
     
     
     <!-- HomeSubContent-->
     
-    <div data-role="view" id="BusinessServices"  data-layout="Home-layout" data-title="Business Services" >
+    <div data-role="view" id="BusinessServices"  data-layout="Home-layout" data-title="Business Services">
         
-        <div>
+        <div class="left">
           
-                                <p class="heading" style="text-align:left;">
-                                    Business Services
+                                <p class="pstyle" >
+                                   <b class="pheading">Business Services</b>
                                 </p>
-
-                            </div>
-
-                            <p style="margin-top:-12px" >
-
-                            Four Ace Infomatics Private Limited works with clients to address their critical business imperatives.
-                            Through our project model, we industrialize project management, project coordination,
-                            agile application development, maintenance and support.
+                    
                           
-                            <hr style="margin-top:-5px">
+
+                            <p class="txtspace" >
+
+                            		Four Ace Infomatics Private Limited works with clients to address their critical business imperatives.
+                           		 Through our project model, we industrialize project management, project coordination,
+                           		 agile application development, maintenance and support.
+                                
+                                </P>
+                          
+                            <hr >
                              
                                 
                                 
@@ -271,7 +181,7 @@
 
                                 <tr >
 
-                                    <td  style="vertical-align:top;">
+                                    <td  style="vertical-align:top;" class="imgwidth">
                                         <p><img src="images/home/business4.png"style="float:left;"/></p>
                                     </td>
                                     
@@ -301,7 +211,7 @@
 
                                 <tr>
 
-                                    <td style="vertical-align:top">
+                                    <td style="vertical-align:top" class="imgwidth">
 
                                        <p> <img src="images/home/business5.png" style="float:left;"></p>
                                         
@@ -334,20 +244,21 @@
             
             
             
-            
+            </div>
             
         </div>
       
   
-    <div data-role="view" id="CloudServices"  data-layout="Home-layout" data-title="Cloud Services">
-        <div>
+    <div data-role="view" id="CloudServices"  data-layout="Home-layout" data-title="Cloud Services" >
+        <div class="left">
             
-            <center> <p class="heading" style="text-align:left;font-weight:bold">Cloud Services</p></center>
-             <p style="margin-top:-12px" >
+            <center> <p  > <b class="pheading">Cloud Services</b></p></center>
+             <p class="txtspace" >
 
                             At Four Ace Infomatics Private Limited, We view cloud as a paradigm that enables organizations to 
                     operate more efficiently, while also further enables a service-based IT delivery model, 
                     resulting in improved responsiveness to business needs.
+                 </p>
                          
                                 
                  
@@ -425,18 +336,21 @@
         
     </div >
     
-    <div data-role="view" id="TechnologyServices" data-layout="Home-layout"  data-title="Technology Services">
+    <div data-role="view" id="TechnologyServices" data-layout="Home-layout"  data-title="Technology Services" >
         
-        <div>
+        <div class="left">
          
-            <p class="heading" style="text-align:left;"  >
-                       	 Technology Services 
+            <p class="pstyle" >
+                
+                            	<b class="pheading" > Technology Services</b> 
+                
+                
                      	</p>
                      
                 
                 	
                     
-                  <p style="margin-top:-12px">  At Four Ace Infomatics Private Limited we help you address evolving business and technology challenges
+                  <p class="txtspace">  At Four Ace Infomatics Private Limited we help you address evolving business and technology challenges
                     by defining, designing and building applications tailored to meet your business requirements. 
                     At Four Ace, we deliver IT enabled Web/Cloud/Windows/Mobile Apps solutions.
                    
@@ -444,7 +358,7 @@
            
                   
                    
-                   <div style="width:100%;height:1px;background:#ECECEE"></div>
+                   <hr style="width:100%;">
                    
                    
                    
@@ -453,7 +367,7 @@
 
                                 <tr >
 
-                                    <td  style="vertical-align:top;" >
+                                    <td  style="vertical-align:top;" class="imgwidth" >
                                         <p><img src="images/home/Technology.png"style="float:left;"/></p>
                                     </td>
                                     <td style="float:right;vertical-align:top" >
@@ -482,7 +396,7 @@
 
                                 <tr>
 
-                                    <td style="vertical-align:top" >
+                                    <td style="vertical-align:top" class="imgwidth" >
 
                                        <p> <img src="images/home/technology1.png" style="float:left;"></p>
                                         
@@ -517,7 +431,7 @@
                    
                                 <tr>
 
-                                    <td style="vertical-align:top">
+                                    <td style="vertical-align:top" class="imgwidth">
 
                                        <p> <img src="images/home/technology2.png" style="float:left;"></p>
                                         
@@ -553,7 +467,7 @@
         data-role="view"
         data-title="Services">
         
-     
+      <div>
 
        <ul data-role="listview">
                  <li><a href="#applicationdevelopment" data-transition="slide" class="menu" > Application Development</a></li> 
@@ -565,7 +479,10 @@
                  <li><a href="#itgovernance" data-transition="slide" class="menu" >It Governance</a></li>
                  <li><a href="#enterprisemobility" data-transition="slide" class="menu" >Enterprise Mobility</a></li> 
                  
-              </ul>  
+       
+           </ul>
+          
+         </div> 
     </div>
     
     
@@ -573,7 +490,7 @@
     
     <div data-role="view" id="applicationdevelopment" data-layout="Service-layout"  data-title="Application Development">
         
-         <div data-role="content"  style="margin-top:-15px;">
+         <div data-role="content"  style="margin-top:-15px;" class="left">
   
                    
 			<div  id="id2" style="width:100%;text-align:left;">
@@ -738,7 +655,7 @@
         
     <div data-role="view" id="applicationmanagement" data-layout="Service-layout"  data-title="ApplicationManagement">
         
-        <div>
+        <div class="left" >
             <center>
            	 <p class="heading" style="text-align:left;font-weight:bold">Application Management</p>
                 
@@ -827,7 +744,7 @@
         
     <div   data-role="view" id="enterprise" data-layout="Service-layout"  data-title="Enterprise Integration">
         
-        <div>
+        <div class="left">
             <center>
           	 <p class="heading" style="text-align:left;font-weight:bold;">Enterprise-Integration</p>
             
@@ -931,7 +848,7 @@
         
         
       <div data-role="view" id="businessintelligence"  data-layout="Service-layout" data-title="Business Intelligence"  >
-          <div>
+          <div class="left">
             
               <center> <p class="heading" style="text-align:left;font-weight:bold;">Business Intelligence</p></center>
                  <p  style="margin-top:-12px">
@@ -1022,7 +939,7 @@
  
     <div data-role="view" id="itconsulting"  data-layout="Service-layout" data-title="IT consulting" >
         
-      <div>
+      <div class="left">
           
          
                     <center> <p class="heading" style="text-align:left;font-weight:bold;">ITConsulting</p></center>
@@ -1110,7 +1027,7 @@
     
     <div data-role="view" id="cloud_services" data-layout="Service-layout"  data-title="Cloud Services">
         
-        <div>
+        <div class="left">
           
             <center> <p class="heading" style="text-align:left;font-weight:bold">Cloud Services</p></center>
 
@@ -1228,7 +1145,7 @@
     
     <div data-role="view" id="itgovernance" data-layout="Service-layout"  data-title="IT Governance" >
         
-        <div>
+        <div class="left">
             
                     <center> <p class="heading" style="text-align:left;font-weight:bold">IT Governance</p>
                         
@@ -1309,7 +1226,7 @@
     
     <div data-role="view" id="enterprisemobility"  data-layout="Service-layout" data-title="Enterprise Mobility">
         
-        <div>
+        <div class="left">
             
            
                     <center> <p class="heading" style="text-align:left;font-weight:bold">Enterprise Mobility</p></center>
@@ -1422,6 +1339,7 @@
     <div id="banking"
          data-role="view"
          data-title="Banking" data-layout="industries-layout">
+       <div class="left">
          <p  class="pstyle"><b class="pheading">Banking</b><br>
                  
                   <p class="txtspace">The global banking landscape has experienced tectonic shifts in the aftermath of the financial meltdown. Regulatory norms have tightened across global markets, increasing the compliance burden of banks.Customer experience is fast becoming the real differentiator in banking. 
@@ -1562,13 +1480,92 @@
 
                             </table>
 
-         
+         </div> 
     </div>                                    
     
+     <div id="consumergoods"
+         data-role="view"
+         data-title="Banking" data-layout="industries-layout">
+       <div class="left">                                     
+       		<p  class="pstyle"><b class="pheading">Consumer Goods</b><br>
+                 
+                    <p class="txtspace"> Succeeding in the market today is not just about providing products and services based on consumer and shopper insight. It is about moving ahead from insight to foresight and developing consumer goods that redefine your consumer's tastes and preferences.
+                    </p>
+                        
+                    </p>                    
+                    <hr>                    
+                    
+                     <table class="tblspace">
+
+                                <tr >
+
+                                    <td  style="vertical-align:top;" class="imgwidth" >
+                                        <p><img src="images/Industries/consumergoods.png"style="float:left;"  /></p>
+                                    </td>
+
+                                    <td style="float:right;vertical-align:top" >
+                                        
+                                        <P class="topmargin">
+                                            <b>Consumer Goods</b><br>                                      
+                                             <p class="txtspace">Consumer goods organizations are re-engineering the way they connect their brands with their consumers based on the following business drivers: 
+                                              
+                                                  <br>Business to Business (B2B) and Direct to Consumer (D2C) initiatives 
+                                                  <br>Continuous innovation and value chain optimization 
+                                                  <br>Rapid globalization and growth in emerging markets such as APAC and LATAM 
+                                                  <br> Surge of new brands and shopping channels 
+                                           </p>   
+                                        </P>
+
+                                    </td>
+
+                                </tr> 
+                                
+                                <tr>
+                                   <td colspan="2">
+                                      <div style="width:100%;height:1px;background:#ECECEE"></div> 
+                                  
+                                   </td>
+                                </tr>
+                                
+
+                                <tr>
+
+                                    <td style="vertical-align:top">
+
+                                       <p> <img src="images/Industries/consumerbrands.png" style="height:auto;width:100%;max-width:100%;float:left"></p>
+                                        
+                                      
+                                      
+                                    </td>
+
+                                    <td style="float:right;vertical-align:top">
+									     
+                                        <p class="topmargin"> 
+                                            <b>Connecting Brands with Consumers</b><br>
+                                            	<p class="txtspace">Our comprehensive set of solutions and services are focused on the dynamic needs of global consumer goods organizations.<br>
+                                            Analytics and Insights<br>
+                                            Cloud and Mobility <br>
+                                             Supply Chain <br>
+                                             Marketing Mix Optimization <br>
+                                             Independent Testing and Validation 
+                                            </p>
+                                        </p>
+                                    </td>
+
+                                </tr>
+                            
+                            </table>
+               
+         </div> 
+    </div>                                    
+                       
+                               
      <!--industries-Government-->
     <div id="government"
         data-role="view"
         data-title="Government" data-layout="industries-layout">
+        
+       <div class="left"> 
         <p  class="pstyle"><b class="pheading">Government</b><br>
                  
                      <p class="txtspace">Government agencies have seen an increased need for improving and developing their information technology landscapes. This is seen as a step to increase connectivity to the masses, simplify management of state/local resources and facilitate transparency. 
@@ -1627,13 +1624,16 @@
                                 </tr>
                               
                             </table>
-
+         </div>
     </div>
     
      <!--industries-Utilities-->
     <div id="utilities"
         data-role="view"
         data-title="Utilities" data-layout="industries-layout">
+        
+        <div class="left">
+        
         <p  class="pstyle"><b class="pheading">Utilities</b><br>
                  
                      <p class="txtspace">Four Ace Infomatics helps enhance the profitability of Electricity, Gas and Water Utility firms through innovative solutions that help improve operational efficiency by standardizing processes at the core of the organization, and help increase revenues by creating differentiated offerings and processes that involve the consumer.
@@ -1691,13 +1691,16 @@
                                 
                                 
                                </table>
-
+        </div>
     </div>
     
      <!--industries-Engineering-->
     <div id="engineering"
         data-role="view"
         data-title="Engineering" data-layout="industries-layout">
+        
+        <div class="left">
+        
         <p  class="pstyle"><b class="pheading">Engineering/Construction</b><br>
                     <p class="txtspace"> The ongoing massive urbanization and infrastructure expansion in emerging markets has fuelled the growth in demand for raw materials and energy over last decade. Although the continuity in growth for Engineering & Construction industry has been interrupted due to recent uncertainties in global economic climate, the long-term demand outlook in emerging markets is expected to drive significant growth in Capital Spending Trends. 
                    </p></p>
@@ -1750,6 +1753,8 @@
 
                                 </tr>
                             </table>
+            
+            </div>
 
     </div>                                     
    
@@ -1757,6 +1762,7 @@
     <div id="healthcare"
         data-role="view"
         data-title="Healthcare" data-layout="industries-layout">
+        <div class="left">
         <p  class="pstyle"><b class="pheading" >Healthcare</b><br>
                     <p class="txtspace"> The global healthcare industry is undergoing a change with focus firmly on improving the quality of care delivered. There is an increased focus on an integrated healthcare ecosystem with collaboration between various stakeholders.
                     </p></p>
@@ -1810,14 +1816,18 @@
 
                                 </tr>
                                </table>
-
-    </div>                                                    
+          </div>
+      </div>                                                    
                                           
       <!--industries-Hi-tech-->
     <div id="hi-tech"
         data-role="view"
         data-title="Hi-tech" data-layout="industries-layout">
+        
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Hi-tech</b><br>
+            
+            
                      <p class="txtspace">The Hi-Tech industry is driven by intense competition, continuous product innovation and swift responses to market global sourcing strategies to address new markets. 
                    </p></p>
                    <hr>
@@ -1841,14 +1851,15 @@
                                     </td>
 
                                 </tr>
-                   </table>
-
+                       </table>
+       </div>
     </div> 
                                           
      <!--industries-Insurance-->
     <div id="insurance"
         data-role="view"
         data-title="Insurance" data-layout="industries-layout">
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Insurance</b><br> 
                     <p class="txtspace"> Solution accelerators, IP, best-in-class industry partnerships, tested execution capability and proven domain expertise deliver excellence and business outcomes to Life and Non-Life businesses
                     </p></p> 
@@ -1873,13 +1884,15 @@
 
                                 </tr>
                     </table>
-
+        </div>
     </div> 
                                           
      <!--industries-Professional Services-->
     <div id="professional"
         data-role="view"
         data-title="Professional Services">
+        
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Professional Services</b><br>
                     <p class="txtspace"> Professional, Business and Information Services firms face numerous challenges in their business operations. Productivity trends continue to remain flat , while higher wages, commoditization of offerings, competition, and increasing operating costs have contributed in decreasing margins.
                     </p></p> 
@@ -1931,13 +1944,14 @@
 
                                 </tr>
                     </table>
-
+      </div>
     </div>                                                    
                                           
      <!--industries-Media-->
     <div id="media"
         data-role="view"
         data-title="Media" data-layout="industries-layout">
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Media</b><br>
                       <p class="txtspace">The Media industry continues its profound digital transformation. Supply chains are re-defined, products and services reconfigured, whole business models are revamped. The only constant in this evolving, connected and personalized world is change.
                      </p></p>
@@ -1989,13 +2003,16 @@
 
                                 </tr>
                      </table>
- 
+       </div>
     </div>                                                    
                                           
      <!--industries-Transportation-->
     <div id="transportation"
         data-role="view"
         data-title="Transportation" data-layout="industries-layout">
+        
+        <div class="left">
+        
         <p  class="pstyle"><b class="pheading">Transportation</b><br> 
                      <p class="txtspace">eople and freight movement are the lifelines of a connected global economy. Transportation overcomes distance, time, weather, topography, borders, regulations, tariffs and political factors.
                    </p></p>  
@@ -2052,6 +2069,7 @@
 
                                 </tr>
                    </table>
+        </div>
 
     </div>                                                    
                                           
@@ -2059,7 +2077,8 @@
     <div id="retail"
         data-role="view"
         data-title="Retail">
-        <p  class="pstyle"><b class="pheading">Retail</b><br>
+        <div class="left">
+      		  <p  class="pstyle"><b class="pheading">Retail</b><br>
                     <p class="txtspace"> Shoppers habits are evolving and their expectations of experience and personalization are rising faster than many retailers can react. In the past the customer's path to purchase was linear. Now this journey is dynamic and continuous.
                     </p></p>
                      <hr>
@@ -2112,6 +2131,7 @@
 
                                 </tr>
                      </table>
+        </div>
 
     </div>                                                         
                                           
@@ -2138,6 +2158,8 @@
     <div id="experience"
         data-role="view"
         data-title="Experience Certaintity" data-layout="aboutus-layout">
+        
+        <div class="left">        
         <p  class="pstyle"><b class="pheading">Experience certainty</b><br>
                      <p class="txtspace">True certainty of success comes from working with a partner you trust to provide the insight, support and expertise that will propel your business forward. Experiencing certainty with Four Ace Infomatics Private Limited means you can count on results, partnership and leadership.
                      </p>    
@@ -2218,6 +2240,9 @@
 
                                 </tr>
                     </table>
+                                                
+        </div>
+
 
         
     </div>
@@ -2226,6 +2251,8 @@
     <div id="expertise"
         data-role="view"
         data-title="Expertise and Capabilities" data-layout="aboutus-layout">
+        
+        <div class="left">
         
                    <p  class="pstyle"><b class="pheading">Expertise and Capatilities</b><br>
                       <p class="txtspace">At Four Ace Infomatics Limited, We have expertise on several latest and challenging technologies to make sure we provide our client the best of software services.
@@ -2310,6 +2337,7 @@
 
                                 </tr>
                    </table>
+            </div>
 
     </div>                                           
     
@@ -2317,7 +2345,10 @@
     <div id="coperate"
         data-role="view"
         data-title="Coperate Facts" data-layout="aboutus-layout">
-        <p  class="pstyle"><b class="pheading">Corporate Facts</b><br>
+        
+        <div class="left">
+        
+       	 <p  class="pstyle"><b class="pheading">Corporate Facts</b><br>
                     <p class="txtspace">
                         Four Ace Infomatics Private Limited is an IT services, 
                         consulting and business solutions organization that delivers
@@ -2415,6 +2446,8 @@
 
                                 </tr>
                    </table>
+            
+            </div>
                
 
     </div>
@@ -2423,6 +2456,8 @@
     <div id="operational"
         data-role="view"
         data-title="Operational Excellence" data-layout="aboutus-layout">
+        
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Operational Excellence</b><br>
                        <p class="txtspace">At Four Ace Infomatics Private Limited, ‘Operational Excellence’ is achieving industry leading benchmarks across quality, time and cost dimensions for all functions and achieving  continuous improvement in each of these dimensions. 
                        </p>
@@ -2501,6 +2536,7 @@
 
                                 </tr>
                       </table>
+       </div>                                     
 
     </div>                                      
     
@@ -2508,6 +2544,8 @@
     <div id="vision"
         data-role="view"
         data-title="Vision and Core Values" data-layout="aboutus-layout">
+        
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Vision and Core Values </b><br>
                     <p class="txtspace">A customer is the most important visitor on our premises.
                         He is not dependent on us. We are dependent on him.
@@ -2536,6 +2574,7 @@
                                     </td>
                                 </tr> 
                             </table>
+            </div>
                
     </div>                                       
     
@@ -2543,6 +2582,9 @@
     <div id="culture"
         data-role="view"
         data-title="Culture" data-layout="aboutus-layout">
+        
+        <div class="left">
+        
         <p  class="pstyle"><b class="pheading">Culture</b><br>
                      <p class="txtspace">Four Ace Infomatics Private Limited is committed to our Winning Culture. We aim to achieve sustained, unprecedented growth by delivering enhanced value to customers, employees, shareholders and the communities we operate in. 
                      </p>    
@@ -2624,6 +2666,7 @@
                                     </td>
                                 </tr>
                     </table>
+            </div>
 
     </div>                                        
     
@@ -2631,6 +2674,8 @@
     <div id="spirit"
         data-role="view"
         data-title="Spirit of Four Ace" data-layout="aboutus-layout">
+        
+        <div class="left">
         <p  class="pstyle"><b class="pheading">Sprit of Four Ace</b><br>
                       <p class="txtspace">The Spirit is rooted in current reality, but it also represents what Four Ace Infomatics Private Limited aspires to be thus making it future active. The Spirit is an indivisible synthesis of all three statements. It means manifesting Intensity to Win, acting with sensitivity and being unyielding on integrity all the time. 
                       </p>    
@@ -2711,13 +2756,14 @@
 
                                 </tr>
                     </table>
+            </div>
 
     </div>                                       
    
     <!--Career-->
     
     <div id="tabstrip-career" data-role="view" data-title="careers">
-         
+         <div class="left">
          <p>
 
  		At Four Ace Infomatics Limited, employee people of passion and imagination to help transform global businesses into virtual enterprises. 
@@ -2761,12 +2807,12 @@
  
   		</p>
  	 </p>
-  
+      </div>
     </div>
    
    <!-- Contactus--> 
     <div id="tabstrip-contact" data-role="view" data-title="Contactus" >
-         
+         <div class="left">
         <p><b> Coroperate Headquarter & Development Center UK</b></p>
         <p>
           
@@ -2797,7 +2843,7 @@
          
         </p>
         
-        <table class= "career">
+        <table >
                  
  			<tr>
                         
@@ -2853,7 +2899,7 @@
 			</table>
     
         
-        
+        </div> 
         
         
         
@@ -2865,7 +2911,7 @@
     <div id="tabstrip-Employee" data-role="view" data-title="Employee">
        
         
-        <div>
+        <div class="left">
  
        <center>
  
@@ -2942,7 +2988,7 @@
             <div data-role="tabstrip">
                 <a href="#tabstrip-index" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
-                <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
+                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
              <!--   <a href="#tabstrip-career" data-icon="globe">Career</a>
                 <a href="#tabstrip-contact" data-icon="phone">Contact</a>
@@ -2993,7 +3039,7 @@
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
-                <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
+                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
              <!--   <a href="#tabstrip-career" data-icon="globe">Career</a>
                 <a href="#tabstrip-contact" data-icon="phone">Contact</a>
@@ -3040,7 +3086,7 @@
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
-                <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
+                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
              <!--   <a href="#tabstrip-career" data-icon="globe">Career</a>
                 <a href="#tabstrip-contact" data-icon="phone">Contact</a>
@@ -3064,7 +3110,7 @@
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
-                <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
+                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
                <!-- <a href="#tabstrip-career" data-icon="globe">Career</a>
                 <a href="#tabstrip-contact" data-icon="phone">Contact</a>
@@ -3089,9 +3135,9 @@
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
-                <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
+                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
-                <a href="#tabstrip-career" data-icon="globe">Career</a>
+               <!-- <a href="#tabstrip-career" data-icon="globe">Career</a>
                 <a href="#tabstrip-contact" data-icon="phone">Contact</a>
                 <a href="#tabstrip-Employee" data-icon="contacts">Employee</a> -->
             </div>
