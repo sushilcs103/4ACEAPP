@@ -21,7 +21,7 @@
     
     <!--IndexPage-->
     
-    <div id="tabstrip-index"
+ <!--   <div id="tabstrip-index"
         data-role="view"
         data-title="Home" >
         <header data-role="header" >
@@ -90,11 +90,11 @@
                     <a href="Featured.html" rel="external" class="a" ><p class="group"><img src="Images/featured9.png" class="grow" /><br>Featured</p></a>
                  
                  
-                </td>-->
+                </td>
                 
                 <td  >
                     
-                   <a href="#Employee-layout"  class="menu" ><p class="group"><img src="images/index/EmployeeIcon.png"  /><br>Employee</p></a>
+                   <a href="#tabstrip-Employee"  class="menu" ><p class="group"><img src="images/index/EmployeeIcon.png"  /><br>Employee</p></a>
                  
                    
                     
@@ -110,8 +110,109 @@
         
         
         
-    </div>
+    </div> -->
     
+    
+    
+       <div id="tabstrip-index"
+        data-role="view"
+         data-layout="Index-layout"
+        data-title="" >
+       
+        <header data-role="header" >
+            <div data-role="navbar" style="background:black">
+                <span data-role="view-title" style="color:white"><center><img src="images/index/logo.png"  style="height:40px;width:140px"  /></center></span>
+                
+                
+            </div>
+        </header>
+       <div>
+        <table align="center"   style="padding-top:2px;width:100%;height:100%" >
+            <tr align="center"  >
+             <td >
+                 <a  href="#tabstrip-home" class="menu"><p class="group" ><img  src="images/index/home8.png"   /><br>Home</p></a> 
+                
+                
+             </td>
+             <td > 
+              <a href="#tabstrip-Services"  class="menu" ><p class="group" ><img src="images/index/OurServices9.png"   /><br>Services</p></a> 
+                 
+                
+             </td>
+                       
+              <td >
+                <a href="#tabstrip-Industries" rel="external" class="menu" ><p class="group"><img src="images/index/Industries9.png"   /><br>Industries</p></a>
+                 
+                
+             </td>
+                 
+             
+             
+             
+         </tr>
+            
+            
+             <tr align="center" >
+             
+            
+                 
+                 
+                 <td >
+               <a href="#tabstrip-AboutUs" class="menu"  ><p class="group"><img src="images/index/aboutus8.png"   /><br>About Us</p></a>
+                  
+                  
+             </td>
+             
+                 
+                   <td>
+               <a href="#tabstrip-career"   class="menu"><p class="group"><img src="images/index/careers8.png"  /><br>Careers</p></a>
+                 
+                 
+             </td>
+                 
+                 
+                     
+                  <td >
+                <a href="#tabstrip-contact"  class="menu" ><p class="group"><img src="images/index/ContactUS8.png" /><br>Contact Us</p></a>
+                 
+               
+             </td>  
+                 
+         </tr>
+            
+            <tr align="center">
+               <!-- <td>
+                    <a href="Featured.html" rel="external" class="a" ><p class="group"><img src="Images/featured9.png" class="grow" /><br>Featured</p></a>
+                 
+                 
+                </td>-->
+                
+                <td  >
+                    
+                   <a href="#tabstrip-Employee"  class="menu" ><p class="group"><img src="images/index/EmployeeIcon.png"  /><br>Employee</p></a>
+                 
+                   
+                    
+                </td>
+            
+            </tr>
+          
+            
+     </table>
+
+      </div> 
+        
+        
+      <div data-role="footer" style="background:black;height:50px;width:100%">
+            <div>
+             
+               
+            
+             </div>  
+        </div>
+          
+        
+    </div>
     
     
     
@@ -119,14 +220,8 @@
        <!--Home View-->
     <div id="tabstrip-home"
         data-role="view"
-        data-title="Home">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+        data-title="Home" >
+       
 
         <h3>Description</h3>
          <p>
@@ -152,7 +247,7 @@
     
     <!-- HomeSubContent-->
     
-    <div data-role="view" id="BusinessServices"  data-title="Business Services" >
+    <div data-role="view" id="BusinessServices"  data-layout="Home-layout" data-title="Business Services" >
         
         <div>
           
@@ -244,7 +339,7 @@
         </div>
       
   
-    <div data-role="view" id="CloudServices"  data-title="Cloud Services">
+    <div data-role="view" id="CloudServices"  data-layout="Home-layout" data-title="Cloud Services">
         <div>
             
             <center> <p class="heading" style="text-align:left;font-weight:bold">Cloud Services</p></center>
@@ -330,7 +425,7 @@
         
     </div >
     
-    <div data-role="view" id="TechnologyServices"  data-title="Technology Services">
+    <div data-role="view" id="TechnologyServices" data-layout="Home-layout"  data-title="Technology Services">
         
         <div>
          
@@ -457,13 +552,7 @@
     <div id="tabstrip-Services"
         data-role="view"
         data-title="Services">
-         <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+        
      
 
        <ul data-role="listview">
@@ -482,7 +571,7 @@
     
      <!--Service SubContent-->
     
-    <div data-role="view" id="applicationdevelopment"  data-title="Application Development">
+    <div data-role="view" id="applicationdevelopment" data-layout="Service-layout"  data-title="Application Development">
         
          <div data-role="content"  style="margin-top:-15px;">
   
@@ -647,7 +736,7 @@
         
     </div> 
         
-    <div data-role="view" id="applicationmanagement"  data-title="ApplicationManagement">
+    <div data-role="view" id="applicationmanagement" data-layout="Service-layout"  data-title="ApplicationManagement">
         
         <div>
             <center>
@@ -736,7 +825,7 @@
     </div>    
         
         
-    <div   data-role="view" id="enterprise"  data-title="Enterprise Integration">
+    <div   data-role="view" id="enterprise" data-layout="Service-layout"  data-title="Enterprise Integration">
         
         <div>
             <center>
@@ -841,7 +930,7 @@
     </div>    
         
         
-      <div data-role="view" id="businessintelligence" data-title="Business Intelligence"  >
+      <div data-role="view" id="businessintelligence"  data-layout="Service-layout" data-title="Business Intelligence"  >
           <div>
             
               <center> <p class="heading" style="text-align:left;font-weight:bold;">Business Intelligence</p></center>
@@ -931,7 +1020,7 @@
           
       </div>  
  
-    <div data-role="view" id="itconsulting"  data-title="IT consulting" >
+    <div data-role="view" id="itconsulting"  data-layout="Service-layout" data-title="IT consulting" >
         
       <div>
           
@@ -1019,7 +1108,7 @@
         
     </div>
     
-    <div data-role="view" id="cloud_services"  data-title="Cloud Services">
+    <div data-role="view" id="cloud_services" data-layout="Service-layout"  data-title="Cloud Services">
         
         <div>
           
@@ -1137,7 +1226,7 @@
     </div>
     
     
-    <div data-role="view" id="itgovernance"  data-title="IT Governance" >
+    <div data-role="view" id="itgovernance" data-layout="Service-layout"  data-title="IT Governance" >
         
         <div>
             
@@ -1218,7 +1307,7 @@
     </div>
     
     
-    <div data-role="view" id="enterprisemobility"  data-title="Enterprise Mobility">
+    <div data-role="view" id="enterprisemobility"  data-layout="Service-layout" data-title="Enterprise Mobility">
         
         <div>
             
@@ -1313,13 +1402,7 @@
     <div id="tabstrip-Industries"
         data-role="view"
         data-title="Industries">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+        
                <ul data-role="listview">
                  <li><a href="#banking" data-transition="slide" class="menu" > Banking</a></li> 
                  <li><a href="#consumergoods" data-transition="slide" class="menu" >Consumer Goods</a></li>
@@ -1338,7 +1421,7 @@
    <!--industries-Banking-->
     <div id="banking"
          data-role="view"
-         data-title="Banking">
+         data-title="Banking" data-layout="industries-layout">
          <p  class="pstyle"><b class="pheading">Banking</b><br>
                  
                   <p class="txtspace">The global banking landscape has experienced tectonic shifts in the aftermath of the financial meltdown. Regulatory norms have tightened across global markets, increasing the compliance burden of banks.Customer experience is fast becoming the real differentiator in banking. 
@@ -1485,7 +1568,7 @@
      <!--industries-Government-->
     <div id="government"
         data-role="view"
-        data-title="Government">
+        data-title="Government" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Government</b><br>
                  
                      <p class="txtspace">Government agencies have seen an increased need for improving and developing their information technology landscapes. This is seen as a step to increase connectivity to the masses, simplify management of state/local resources and facilitate transparency. 
@@ -1550,7 +1633,7 @@
      <!--industries-Utilities-->
     <div id="utilities"
         data-role="view"
-        data-title="Utilities">
+        data-title="Utilities" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Utilities</b><br>
                  
                      <p class="txtspace">Four Ace Infomatics helps enhance the profitability of Electricity, Gas and Water Utility firms through innovative solutions that help improve operational efficiency by standardizing processes at the core of the organization, and help increase revenues by creating differentiated offerings and processes that involve the consumer.
@@ -1614,7 +1697,7 @@
      <!--industries-Engineering-->
     <div id="engineering"
         data-role="view"
-        data-title="Engineering">
+        data-title="Engineering" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Engineering/Construction</b><br>
                     <p class="txtspace"> The ongoing massive urbanization and infrastructure expansion in emerging markets has fuelled the growth in demand for raw materials and energy over last decade. Although the continuity in growth for Engineering & Construction industry has been interrupted due to recent uncertainties in global economic climate, the long-term demand outlook in emerging markets is expected to drive significant growth in Capital Spending Trends. 
                    </p></p>
@@ -1673,8 +1756,8 @@
      <!--industries-Healthcare-->
     <div id="healthcare"
         data-role="view"
-        data-title="Healthcare">
-        <p  class="pstyle"><b class="pheading">Healthcare</b><br>
+        data-title="Healthcare" data-layout="industries-layout">
+        <p  class="pstyle"><b class="pheading" >Healthcare</b><br>
                     <p class="txtspace"> The global healthcare industry is undergoing a change with focus firmly on improving the quality of care delivered. There is an increased focus on an integrated healthcare ecosystem with collaboration between various stakeholders.
                     </p></p>
                     <hr>
@@ -1733,7 +1816,7 @@
       <!--industries-Hi-tech-->
     <div id="hi-tech"
         data-role="view"
-        data-title="Hi-tech">
+        data-title="Hi-tech" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Hi-tech</b><br>
                      <p class="txtspace">The Hi-Tech industry is driven by intense competition, continuous product innovation and swift responses to market global sourcing strategies to address new markets. 
                    </p></p>
@@ -1765,7 +1848,7 @@
      <!--industries-Insurance-->
     <div id="insurance"
         data-role="view"
-        data-title="Insurance">
+        data-title="Insurance" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Insurance</b><br> 
                     <p class="txtspace"> Solution accelerators, IP, best-in-class industry partnerships, tested execution capability and proven domain expertise deliver excellence and business outcomes to Life and Non-Life businesses
                     </p></p> 
@@ -1854,7 +1937,7 @@
      <!--industries-Media-->
     <div id="media"
         data-role="view"
-        data-title="Media">
+        data-title="Media" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Media</b><br>
                       <p class="txtspace">The Media industry continues its profound digital transformation. Supply chains are re-defined, products and services reconfigured, whole business models are revamped. The only constant in this evolving, connected and personalized world is change.
                      </p></p>
@@ -1912,7 +1995,7 @@
      <!--industries-Transportation-->
     <div id="transportation"
         data-role="view"
-        data-title="Transportation">
+        data-title="Transportation" data-layout="industries-layout">
         <p  class="pstyle"><b class="pheading">Transportation</b><br> 
                      <p class="txtspace">eople and freight movement are the lifelines of a connected global economy. Transportation overcomes distance, time, weather, topography, borders, regulations, tariffs and political factors.
                    </p></p>  
@@ -2036,13 +2119,7 @@
     <div id="tabstrip-AboutUs"
         data-role="view"
         data-title="AboutUs">
-         <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+        
 
         <ul data-role="listview">
             <li><a href="#experience" data-transition="slide" class="menu" >Experience Certaintity</a></li> 
@@ -2060,7 +2137,7 @@
     <!--about us-Experience Certaintity-->
     <div id="experience"
         data-role="view"
-        data-title="Experience Certaintity">
+        data-title="Experience Certaintity" data-layout="aboutus-layout">
         <p  class="pstyle"><b class="pheading">Experience certainty</b><br>
                      <p class="txtspace">True certainty of success comes from working with a partner you trust to provide the insight, support and expertise that will propel your business forward. Experiencing certainty with Four Ace Infomatics Private Limited means you can count on results, partnership and leadership.
                      </p>    
@@ -2148,7 +2225,7 @@
      <!--about us-Expertise and Capabilities-->
     <div id="expertise"
         data-role="view"
-        data-title="Expertise and Capabilities">
+        data-title="Expertise and Capabilities" data-layout="aboutus-layout">
         
                    <p  class="pstyle"><b class="pheading">Expertise and Capatilities</b><br>
                       <p class="txtspace">At Four Ace Infomatics Limited, We have expertise on several latest and challenging technologies to make sure we provide our client the best of software services.
@@ -2239,7 +2316,7 @@
     <!--about us-Coperate Facts-->
     <div id="coperate"
         data-role="view"
-        data-title="Coperate Facts">
+        data-title="Coperate Facts" data-layout="aboutus-layout">
         <p  class="pstyle"><b class="pheading">Corporate Facts</b><br>
                     <p class="txtspace">
                         Four Ace Infomatics Private Limited is an IT services, 
@@ -2345,7 +2422,7 @@
     <!--about us-Operational Excellence-->
     <div id="operational"
         data-role="view"
-        data-title="Operational Excellence">
+        data-title="Operational Excellence" data-layout="aboutus-layout">
         <p  class="pstyle"><b class="pheading">Operational Excellence</b><br>
                        <p class="txtspace">At Four Ace Infomatics Private Limited, ‘Operational Excellence’ is achieving industry leading benchmarks across quality, time and cost dimensions for all functions and achieving  continuous improvement in each of these dimensions. 
                        </p>
@@ -2430,7 +2507,7 @@
     <!--about us-Vision and Core Values-->
     <div id="vision"
         data-role="view"
-        data-title="Vision and Core Values">
+        data-title="Vision and Core Values" data-layout="aboutus-layout">
         <p  class="pstyle"><b class="pheading">Vision and Core Values </b><br>
                     <p class="txtspace">A customer is the most important visitor on our premises.
                         He is not dependent on us. We are dependent on him.
@@ -2465,7 +2542,7 @@
     <!--about us-Culture-->
     <div id="culture"
         data-role="view"
-        data-title="Culture">
+        data-title="Culture" data-layout="aboutus-layout">
         <p  class="pstyle"><b class="pheading">Culture</b><br>
                      <p class="txtspace">Four Ace Infomatics Private Limited is committed to our Winning Culture. We aim to achieve sustained, unprecedented growth by delivering enhanced value to customers, employees, shareholders and the communities we operate in. 
                      </p>    
@@ -2553,7 +2630,7 @@
     <!--about us-Spirit of Four Ace-->
     <div id="spirit"
         data-role="view"
-        data-title="Spirit of Four Ace">
+        data-title="Spirit of Four Ace" data-layout="aboutus-layout">
         <p  class="pstyle"><b class="pheading">Sprit of Four Ace</b><br>
                       <p class="txtspace">The Spirit is rooted in current reality, but it also represents what Four Ace Infomatics Private Limited aspires to be thus making it future active. The Spirit is an indivisible synthesis of all three statements. It means manifesting Intensity to Win, acting with sensitivity and being unyielding on integrity all the time. 
                       </p>    
@@ -2640,13 +2717,7 @@
     <!--Career-->
     
     <div id="tabstrip-career" data-role="view" data-title="careers">
-         <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+         
          <p>
 
  		At Four Ace Infomatics Limited, employee people of passion and imagination to help transform global businesses into virtual enterprises. 
@@ -2695,13 +2766,7 @@
    
    <!-- Contactus--> 
     <div id="tabstrip-contact" data-role="view" data-title="Contactus" >
-         <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+         
         <p><b> Coroperate Headquarter & Development Center UK</b></p>
         <p>
           
@@ -2798,13 +2863,7 @@
     
     <!--Employee-->
     <div id="tabstrip-Employee" data-role="view" data-title="Employee">
-         <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                
-                
-            </div>
-        </header>
+       
         
         <div>
  
@@ -2848,14 +2907,14 @@
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a class="nav-button" data-align="left" data-role="backbutton" id="btnlayout" >Back</a>
+                <a href="tabstrip-index" class="nav-button" data-align="left" data-role="backbutton" id="btnlayout" >Back</a>
             </div>
         </div>
 
         <!--Footer-->
         <div data-role="footer">
             <div data-role="tabstrip">
-                <a href="#tabstrip-home" data-icon="home">Home</a>
+                <a href="#tabstrip-index" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
                 <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
@@ -2874,14 +2933,14 @@
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a class="nav-button" data-align="left" data-role="backbutton" id="btnhome" >Back</a>
+                <a href="#tabstrip-home" class="nav-button" data-align="left" data-role="backbutton" id="btnhome" >Back</a>
             </div>
         </div>
 
         <!--Footer-->
         <div data-role="footer">
             <div data-role="tabstrip">
-                <a href="#tabstrip-home" data-icon="home">Home</a>
+                <a href="#tabstrip-index" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
                 <a href="#tabstrip-Industries" data-icon="cart">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
@@ -2899,7 +2958,7 @@
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a class="nav-button" data-align="left" data-role="backbutton" id="servicebtn" >Back</a>
+                <a  href="#tabstrip-Services" class="nav-button" data-align="left" data-role="backbutton" id="servicebtn" >Back</a>
             </div>
         </div>
 
@@ -2925,7 +2984,7 @@
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a class="nav-button" data-align="left" data-role="backbutton" id="btnindustries" >Back</a>
+                <a href="#tabstrip-Industries" class="nav-button" data-align="left" data-role="backbutton" id="btnindustries" >Back</a>
             </div>
         </div>
 
@@ -2948,7 +3007,7 @@
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a class="nav-button" data-align="left" data-role="backbutton" id="btnabout">Back</a>
+                <a href="#tabstrip-AboutUs" class="nav-button" data-align="left" data-role="backbutton" id="btnabout">Back</a>
             </div>
         </div>
 
