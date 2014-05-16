@@ -172,7 +172,7 @@
     
     <!-- HomeSubContent-->
     
-    <div data-role="view" id="BusinessServices"  data-layout="Home-layout" data-title="Business Services">
+    <div data-role="view" id="BusinessServices"  data-layout="home-layout" data-title="Business Services">
         
         <div class="left">
           
@@ -266,7 +266,7 @@
         </div>
       
   
-    <div data-role="view" id="CloudServices"  data-layout="Home-layout" data-title="Cloud Services" >
+    <div data-role="view" id="CloudServices"  data-layout="home-layout" data-title="Cloud Services" >
         <div class="left">
             
            <p  > <b class="pheading">Cloud Services</b></p>
@@ -353,7 +353,7 @@
         
     </div >
     
-    <div data-role="view" id="TechnologyServices" data-layout="Home-layout"  data-title="Technology Services" >
+    <div data-role="view" id="TechnologyServices" data-layout="home-layout"  data-title="Technology Services" >
         
         <div class="left">
          
@@ -522,7 +522,7 @@
     
      <!--Service SubContent-->
     
-    <div data-role="view" id="applicationdevelopment" data-layout="Service-layout"  data-title="Application Development">
+    <div data-role="view" id="applicationdevelopment" data-layout="Services-layout"  data-title="Application Development">
         
          <div data-role="content"  style="margin-top:-15px;" class="left">
   
@@ -687,7 +687,7 @@
         
     </div> 
         
-    <div data-role="view" id="applicationmanagement" data-layout="Service-layout"  data-title="ApplicationManagement">
+    <div data-role="view" id="applicationmanagement" data-layout="Services-layout"  data-title="ApplicationManagement">
         
         <div class="left" >
             <center>
@@ -776,7 +776,7 @@
     </div>    
         
         
-    <div   data-role="view" id="enterprise" data-layout="Service-layout"  data-title="Enterprise Integration">
+    <div   data-role="view" id="enterprise" data-layout="Services-layout"  data-title="Enterprise Integration">
         
         <div class="left">
             <center>
@@ -881,7 +881,7 @@
     </div>    
         
         
-      <div data-role="view" id="businessintelligence"  data-layout="Service-layout" data-title="Business Intelligence"  >
+      <div data-role="view" id="businessintelligence"  data-layout="Services-layout" data-title="Business Intelligence"  >
           <div class="left">
             
               <center> <p class="pstyle"  ><b class="pheading">Business Intelligence</b></p></center>
@@ -960,7 +960,7 @@
           
       </div>  
  
-    <div data-role="view" id="itconsulting"  data-layout="Service-layout" data-title="IT consulting" >
+    <div data-role="view" id="itconsulting"  data-layout="Services-layout" data-title="IT consulting" >
         
       <div class="left">
           
@@ -1048,7 +1048,7 @@
         
     </div>
     
-    <div data-role="view" id="cloud_services" data-layout="Service-layout"  data-title="Cloud Services">
+    <div data-role="view" id="cloud_services" data-layout="Services-layout" data-title="Cloud Services">
         
         <div class="left">
           
@@ -1166,7 +1166,7 @@
     </div>
     
     
-    <div data-role="view" id="itgovernance" data-layout="Service-layout"  data-title="IT Governance" >
+    <div data-role="view" id="itgovernance" data-layout="Services-layout"  data-title="IT Governance" >
         
         <div class="left">
             
@@ -1247,7 +1247,7 @@
     </div>
     
     
-    <div data-role="view" id="enterprisemobility"  data-layout="Service-layout" data-title="Enterprise Mobility">
+    <div data-role="view" id="enterprisemobility"  data-layout="Services-layout" data-title="Enterprise Mobility">
         
         <div class="left">
             
@@ -3031,37 +3031,12 @@
     </div>
     
       <!--Home us-Layout-->
-    	<div data-role="layout" data-id="Home-layout">
+    	<<div data-role="layout" data-id="home-layout">
         <!--Header-->
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
-                <a href="#tabstrip-Home" class="nav-button" data-align="left" data-role="backbutton" id="btnhome" >Back</a>
-            </div>
-        </div>
-
-        <!--Footer-->
-        <div data-role="footer">
-            <div data-role="tabstrip">
-                <a href="#tabstrip-index" data-icon="home">Home</a>
-                <a href="#tabstrip-Services" data-icon="settings">Services</a>
-                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
-                <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
-             <!--   <a href="#tabstrip-career" data-icon="globe">Career</a>
-                <a href="#tabstrip-contact" data-icon="phone">Contact</a>
-                <a href="#tabstrip-Employee" data-icon="contacts">Employee</a>-->
-            </div>
-        </div>
-    </div>
-
-    
-        <!--Service us-Layout-->
-    	<div data-role="layout" data-id="Service-layout">
-        <!--Header-->
-        <div data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-                <a  href="#tabstrip-Services" class="nav-button" data-align="left" data-role="backbutton" id="servicebtn" >Back</a>
+                <a href="#tabstrip-Home" class="nav-button" data-align="left" data-role="backbutton" id="btnindustries" >Back</a>
             </div>
         </div>
 
@@ -3072,12 +3047,37 @@
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
                 <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
-              <!--  <a href="#tabstrip-career" data-icon="globe">Career</a>
+             <!--   <a href="#tabstrip-career" data-icon="globe">Career</a>
                 <a href="#tabstrip-contact" data-icon="phone">Contact</a>
                 <a href="#tabstrip-Employee" data-icon="contacts">Employee</a>-->
             </div>
         </div>
-    </div>
+    </div>            
+
+    
+        <!--Service us-Layout-->
+    	<div data-role="layout" data-id="Services-layout">
+        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+                <a href="#tabstrip-Services" class="nav-button" data-align="left" data-role="backbutton" id="btnindustries" >Back</a>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#tabstrip-home" data-icon="home">Home</a>
+                <a href="#tabstrip-Services" data-icon="settings">Services</a>
+                <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
+                <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
+             <!--   <a href="#tabstrip-career" data-icon="globe">Career</a>
+                <a href="#tabstrip-contact" data-icon="phone">Contact</a>
+                <a href="#tabstrip-Employee" data-icon="contacts">Employee</a>-->
+            </div>
+        </div>
+    </div>              
     
     
            
@@ -3190,7 +3190,7 @@
         <!--Footer-->
         <div data-role="footer">
             <div data-role="tabstrip">
-                <a href="#tabstrip-home" data-icon="home">Home</a>
+                <a href="#tabstrip-index" data-icon="home">Home</a>
                 <a href="#tabstrip-Services" data-icon="settings">Services</a>
                 <a href="#tabstrip-Industries" data-icon="industries">Industries</a>
                 <a href="#tabstrip-AboutUs" data-icon="about">AboutUs</a>
