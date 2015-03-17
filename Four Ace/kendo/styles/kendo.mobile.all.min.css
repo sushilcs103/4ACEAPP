@@ -27,6 +27,11 @@
     font-size: .92em;
 }
 
+.mailto
+{
+    color:#0000FF!important;
+    
+}
     .km-root a {
         color: inherit;
     }

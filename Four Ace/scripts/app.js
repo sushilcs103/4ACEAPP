@@ -3,7 +3,6 @@
    
    
     document.addEventListener('deviceready', function () {
-        navigator.splashscreen.hide();
 
         app.changeSkin = function (e) {
             var mobileSkin = "";

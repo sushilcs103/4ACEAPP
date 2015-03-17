@@ -5,6 +5,7 @@ body
     
     
 }
+
 .footerText{
     font-weight:bold;
 }
@@ -29,6 +30,11 @@ body
  margin-top:13px;  
     
 }
+.textboxstyle{
+    border:1px solid #007aff;
+    height:30px;
+    border-radius:4px;
+}
 .tblspace{
     width:100%;
     margin-top:-5px;
@@ -46,8 +52,8 @@ body
 .button1
 {
   float:right;
-  margin-top:-45px;
-  margin-right:30px;  
+  margin-top:-13%;
+  margin-right:22%;  
 }
 
 .menu
